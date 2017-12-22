@@ -170,3 +170,39 @@ def word_search(string):
 
 
 word_search("<gabor> es denes <fel> masztak <a diofa>ra")
+
+def find_min(N):
+    counter = 1213423545
+    numbers_new = []
+    n = int(input("Give me the number of elements: "))
+    for i in range(n):
+        numbers_new.append(int(input("Give me a number: ")))
+    for numbers in range(len(numbers_new)):
+        if numbers_new[numbers] <= counter:
+            counter = numbers_new[numbers]
+    return print(counter)
+
+
+def seq_to_one(n):
+    res = []
+    step=1
+    if n>0:
+        step = -1
+        for i in range(n,0,step):
+            res.append(i)
+        return res
+    elif n<=0:
+        step = 1
+        for i in range(n,2,step):
+            res.append(i)
+        return res
+seq_to_one(0)
+def rajz2(m,n):
+    half_n = int(n / 2)
+    space = int(m - 1)
+    print(m * '*')
+    for i in range(0, half_n):
+        print('*' + space * ' ' + '*')
+        print(m * '*')
+
+rajz2(8,4)
