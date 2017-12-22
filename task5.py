@@ -108,3 +108,12 @@ def vertical(string):
 def palindorome(string):
     return print(string[::-1])
 
+def rajz(a,ch):
+    my_str=""
+    for i in range(a):
+        for j in range(a):
+            my_str+=ch
+        my_str+="\n"
+    return my_str
+
+rajz(4,"m")
